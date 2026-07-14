@@ -1,0 +1,27 @@
+# Dependencies
+node_modules/
+
+# Next.js build output
+.next/
+out/
+
+# Local environment files
+.env*
+!.env.example
+
+# Logs and runtime files
+*.log
+*.pid
+.dev-server.pid
+
+# TypeScript build cache
+*.tsbuildinfo
+
+# Temporary project screenshots
+tmp-*.png
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

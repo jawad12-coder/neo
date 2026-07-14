@@ -1,0 +1,3 @@
+"use client";
+import {useEffect,useState}from"react";
+export function CookieNotice(){const[show,setShow]=useState(false);useEffect(()=>setShow(!localStorage.getItem("neo-cookie-choice")),[]);if(!show)return null;function choose(v:string){localStorage.setItem("neo-cookie-choice",v);setShow(false)}return <aside className="cookie" aria-label="Cookie preferences"><p><b>Your privacy matters.</b><br/>This site uses essential storage for functionality. Analytics integrations remain placeholders until consent tooling is configured.</p><div><button onClick={()=>choose("essential")}>Essential only</button><button onClick={()=>choose("accepted")}>Accept all</button></div></aside>}
